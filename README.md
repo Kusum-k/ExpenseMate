@@ -2,7 +2,7 @@
 
 A comprehensive Spring Boot web application that helps users manage, analyze, and improve their spending habits through gamification and intelligent insights.
 
-## 🚀 Features
+##  Features
 
 ### Core Functionality
 - **Secure Authentication**: Role-based access control (User/Admin) with Spring Security
@@ -10,32 +10,26 @@ A comprehensive Spring Boot web application that helps users manage, analyze, an
 - **Budget Tracking**: Set monthly budgets with automatic email alerts
 - **Interactive Dashboards**: Visualize spending patterns with Chart.js
 
-### 🎮 Gamified Progress System (Unique Feature)
+###  Gamified Progress System
 - **Badge System**: Earn achievements based on spending behavior
-  - 🏆 **Budget Hero**: Spend less than 80% of monthly budget
-  - 💰 **Consistent Saver**: Stay within budget for 3 consecutive months
-  - 📊 **Spending Streak Maintainer**: Log expenses daily for 7+ days
+  -  **Budget Hero**: Spend less than 80% of monthly budget
+  -  **Consistent Saver**: Stay within budget for 3 consecutive months
+  -  **Spending Streak Maintainer**: Log expenses daily for 7+ days
 - **Dynamic Badge Display**: Real-time badge updates on dashboard
 - **Achievement Collection**: Comprehensive badge tracking system
 
-### 📊 Dashboard & Analytics
+###  Dashboard & Analytics
 - Monthly expense summary (pie charts)
 - Spending trend analysis (line charts)
 - Budget progress indicators
 - Category-wise spending breakdown
 
-### 🔔 Smart Notifications
+###  Smart Notifications
 - Email alerts at 80% and 100% budget usage
 - Automated monthly budget resets
 - Badge achievement notifications
 
-### 📈 Additional Features
-- PDF/CSV report generation
-- Advanced expense filtering
-- Scheduled background tasks
-- Admin monitoring dashboard
-
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Backend**: Spring Boot, Spring Security, Spring Data JPA, Spring Scheduler
 - **Frontend**: Thymeleaf, Bootstrap 5, Chart.js
@@ -43,14 +37,14 @@ A comprehensive Spring Boot web application that helps users manage, analyze, an
 - **Email**: JavaMailSender
 - **Build Tool**: Maven
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Java 17+
 - MySQL 8.0+
 - Maven 3.6+
 - SMTP server configuration for email alerts
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
 1. **Clone the repository**
    ```bash
@@ -84,7 +78,7 @@ A comprehensive Spring Boot web application that helps users manage, analyze, an
    - Default Admin: admin@expensemate.com / admin123
    - Default User: user@expensemate.com / user123
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 src/
@@ -104,7 +98,7 @@ src/
 └── test/                    # Unit tests
 ```
 
-## 🎯 Key Learning Outcomes
+##  Key Learning Outcomes
 
 - Secure CRUD operations with authentication
 - Automated background tasks using schedulers
@@ -112,23 +106,3 @@ src/
 - Dynamic data visualization
 - Gamification logic design
 - Role-based access control
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 📞 Support
-
-For support and questions, please open an issue in the GitHub repository.
-
----
-
-**ExpenseMate** - Transform your spending habits through smart tracking and gamified progress! 🎮💰
