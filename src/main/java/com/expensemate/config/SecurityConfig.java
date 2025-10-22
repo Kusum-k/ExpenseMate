@@ -27,18 +27,13 @@ public class SecurityConfig {
     
     @Autowired
     private UserService userService;
-    
-    /**
-     * Password encoder bean using BCrypt
-     */
+  
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
     
-    /**
-     * Authentication provider configuration
-     */
+    
     @Bean
     public DaoAuthenticationProvider authenticationProvider() {
         DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
@@ -47,17 +42,12 @@ public class SecurityConfig {
         return authProvider;
     }
     
-    /**
-     * Authentication manager bean
-     */
+   
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
         return config.getAuthenticationManager();
     }
-    
-    /**
-     * Custom authentication success handler for role-based redirection
-     */
+   
     @Bean
     public AuthenticationSuccessHandler authenticationSuccessHandler() {
         return (request, response, authentication) -> {
@@ -76,10 +66,7 @@ public class SecurityConfig {
             response.sendRedirect(redirectURL);
         };
     }
-    
-    /**
-     * Security filter chain configuration
-     */
+
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
