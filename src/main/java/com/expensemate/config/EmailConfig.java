@@ -7,10 +7,6 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 
 import java.util.Properties;
-
-/**
- * Email configuration for automated budget alerts and notifications
- */
 @Configuration
 public class EmailConfig {
     
@@ -31,10 +27,7 @@ public class EmailConfig {
     
     @Value("${spring.mail.properties.mail.smtp.starttls.enable}")
     private String starttls;
-    
-    /**
-     * JavaMailSender bean configuration
-     */
+ 
     @Bean
     public JavaMailSender javaMailSender() {
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
