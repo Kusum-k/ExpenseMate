@@ -98,7 +98,7 @@ src/
 └── test/                    # Unit tests
 ```
 
-##  Key Learning Outcomes
+## Outcomes
 
 - Secure CRUD operations with authentication
 - Automated background tasks using schedulers
