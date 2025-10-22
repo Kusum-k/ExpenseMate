@@ -1,8 +1,4 @@
--- Sample data for ExpenseMate application
--- This file will be executed on application startup to populate the database with demo data
 
--- Insert sample users (passwords are encoded with BCrypt)
--- Password for all users: "password123"
 INSERT INTO users (username, email, password, full_name, role, created_at, updated_at, is_enabled) VALUES
 ('admin', 'admin@expensemate.com', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.', 'Admin User', 'ADMIN', NOW(), NOW(), true),
 ('john_doe', 'john@example.com', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.', 'John Doe', 'USER', NOW(), NOW(), true),
